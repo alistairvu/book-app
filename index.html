@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <div id="app-header">
+      <div id="header-content">
+        <h1>what have you read?</h1>
+        <form id="book-form">
+          <input type="text" name="title" placeholder="title" id="form-title" />
+          <input
+            type="text"
+            name="author"
+            placeholder="author"
+            id="form-author"
+          />
+          <input type="text" name="isbn" placeholder="isbn" id="form-isbn" />
+          <br />
+          <button type="submit" id="form-submit">add</button>
+        </form>
+      </div>
+    </div>
+    <!--Display-->
+    <div id="app-display">
+      <div id="first-col" class="book-display">
+        <p class="title"><b>title</b></p>
+        <p class="author"><b>author</b></p>
+        <p class="isbn"><b>isbn</b></p>
+      </div>
+      <div id="book-container"></div>
+    </div>
+    <!--Scripts-->
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
